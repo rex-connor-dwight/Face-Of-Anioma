@@ -375,6 +375,46 @@ header button{
 
 
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-width: 50%;
+    height: auto;
+  }
+
+  .row img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Bnt{
+    border: 0;
+    background: var(---red);
+    color: var(---Background);
+    border-radius: .5rem;
+    font-size: 15px;
+    font-weight: 400;
+    padding: .4rem 1.5rem;
+    cursor: pointer;
+    width: 20%;
+    margin: 1rem 0 1rem 2rem;
+  }
+
+
+
 
 
 
