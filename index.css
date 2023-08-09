@@ -320,6 +320,65 @@ header button{
 
 
 
+.Joinhome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.joinUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background: var(---headerBG);
+    border-radius: .6rem;
+    padding: 3rem 2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.box h2{
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.box input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: .8rem 0 .8rem .3rem;
+    border-radius: .2rem;
+    border: 0;
+}
+
+.box button{
+    border: 0;
+    background: var(---red);
+    color: var(---Background);
+    border-radius: .5rem;
+    font-size: 15px;
+    font-weight: 400;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
 
 
 
