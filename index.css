@@ -547,6 +547,150 @@ Body{
 }
 
 
+.Represent{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 5rem 6%;
+}
+
+.rpLeft{
+    width: 50%;
+    margin-right: 9rem;
+}
+
+.rpLeft h1{
+    font-weight: 300;
+    font-size: 3vw;
+    margin-bottom: 4rem;
+}
+
+.Represent details{
+    background: var(--gradient);
+    margin: 2rem 0;
+    font-weight: 600;
+    font-size: 1.2vw;
+    border-radius: .3rem;
+}
+
+.Represent summary{
+    padding: 1rem;
+}
+
+
+.rpLeft p{
+    padding: 1rem;
+    background: var(--lightgray);
+    padding: 2rem ;
+    font-weight: 300;
+    font-size: 1vw;
+    text-align: justify;
+    border-radius: 0 0 .2rem .2rem;
+}
+
+.rpRight{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rpRight h2{
+    font-weight: 400;
+    font-size: 1.8vw;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.rpRight h2 span{
+    color: var(--lightred);
+}
+
+.rpRight p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.Obireviews, .Amandareviews{
+    display: flex;
+    flex-direction: column;
+    background: var(--lightgray);
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: .5rem;
+}
+
+.revtopp{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.revtopp img{
+    max-width: 15%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.revtopp h6{
+    font-weight: 500;
+    font-size: .9vw;
+}
+
+.Obireviews p{
+    text-align: justify;
+    font-weight: 300;
+    font-size: .9vw;
+    margin-bottom: 2rem;
+}
+
+.Amandareviews p{
+    text-align: justify;
+    font-weight: 300;
+    font-size: .9vw;
+    margin-bottom: 2rem;
+}
+
+.revfoot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.revfootLeft{
+    display: flex;
+    align-items: center;
+}
+
+.revfoot img{
+    max-width: 10%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.reaterName h4{
+    font-weight: 600;
+    font-size: .9vw;
+}
+
+.reaterName h5{
+    font-weight: 300;
+    font-size: .75vw;
+    margin-top: .2rem;
+    font-style: italic;
+}
+
+.Amandareviews .revfootLeft img{
+    max-width: 12%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+
+
+
+
 
 
 
@@ -1091,6 +1235,147 @@ Body{
         padding: 15Vh 3% 6vh 3vh;
         margin-left: 5vw;
         border-radius: .4rem;
+    }
+
+    .Represent{
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+        justify-content: space-between;
+        padding: 5rem 6%;
+    }
+    
+    .rpLeft{
+        width: 100%;
+        margin-right: 9rem;
+    }
+    
+    .rpLeft h1{
+        font-weight: 300;
+        font-size: 6vw;
+        margin-bottom: 3rem;
+    }
+    
+    .Represent details{
+        background: var(--gradient);
+        margin: 2rem 0;
+        font-weight: 600;
+        font-size: 3.2vw;
+        border-radius: .3rem;
+    }
+    
+    .Represent summary{
+        padding: 1rem;
+    }
+    
+    
+    .rpLeft p{
+        padding: 1rem;
+        background: var(--lightgray);
+        padding: 2rem ;
+        font-weight: 300;
+        font-size: 2.4vw;
+        text-align: justify;
+        border-radius: 0 0 .2rem .2rem;
+    }
+    
+    .rpRight{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rpRight h2{
+        font-weight: 400;
+        font-size: 4.8vw;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .rpRight h2 span{
+        color: var(--lightred);
+    }
+    
+    .rpRight p{
+        text-align: center;
+        font-weight: 400;
+        font-size: 2.4vw;
+    }
+    
+    .Obireviews, .Amandareviews{
+        display: flex;
+        flex-direction: column;
+        background: var(--lightgray);
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: .5rem;
+    }
+    
+    .revtopp{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .revtopp img{
+        max-width: 18%;
+        height: auto;
+        margin-right: .6rem;
+    }
+    
+    .revtopp h6{
+        font-weight: 500;
+        font-size: 1.8vw;
+    }
+    
+    .Obireviews p{
+        text-align: justify;
+        font-weight: 300;
+        font-size: 2vw;
+        margin-bottom: 1rem;
+    }
+    
+    .Amandareviews p{
+        text-align: justify;
+        font-weight: 300;
+        font-size: 2vw;
+        margin-bottom: 1rem;
+    }
+    
+    .revfoot{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .revfootLeft{
+        display: flex;
+        align-items: center;
+    }
+    
+    .revfoot img{
+        max-width: 12%;
+        height: auto;
+        margin-right: 1rem;
+    }
+    
+    .reaterName h4{
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    
+    .reaterName h5{
+        font-weight: 300;
+        font-size: 1.8vw;
+        margin-top: .2rem;
+        font-style: italic;
+    }
+    
+    .Amandareviews .revfootLeft img{
+        max-width: 14%;
+        height: auto;
+        margin-right: 1rem;
     }
     
 }
