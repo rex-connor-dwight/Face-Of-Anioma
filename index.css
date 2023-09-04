@@ -11,7 +11,8 @@
 :root{
     --lightred: #f83600;
     --darkred: #890303;
-    --lightgray: #f6f6f6;
+    --lightgray: #070c0e;
+    --mildwhite: #a0a9ae;
     --blue: #000507;
     --Book: #e7edf1;
     --AD:#ffffff;
@@ -403,6 +404,149 @@ Body{
     font-weight: 600;
     font-size: 1vw;
 }
+
+.Events{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 6%;
+}
+
+.eTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.etLeft{
+    display: flex;
+    align-items: center;
+}
+
+.etLeft h1{
+    margin-right: 2rem;
+    font-weight: 400;
+    font-size: 1vw;
+    background: var(--gradient);
+    padding: .6rem 2rem;
+    border-radius: 5rem;
+    margin-top: 4vh;
+}
+
+.etLeft h2{
+    font-weight: 300;
+    font-size: .8vw;
+    font-style: italic;
+    color: var(--mildwhite);
+}
+
+.eTop input{
+    background: var(--lightgray);
+    padding:  .4rem .8rem;
+    border: 0;
+    width: 25vw;
+    border-radius: .2rem;
+    color: var(--Book);
+}
+
+.eTop  ::placeholder{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1vw;
+}
+
+.Events h3{
+    margin-bottom: 4rem;
+    font-weight: 400;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Events h3 span{
+    color: var(--lightred);
+}
+
+.eListCon{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+
+.eObi{
+    width: 33%;
+    max-height: fit-content;
+    background: url(Images/eObi.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30Vh 3% 6vh 6vh;
+    border-radius: .4rem;
+}
+
+.eObi .eOmu .eAsagbo, h1{
+    font-weight: 400;
+    font-size: 1.5vw;
+    margin-bottom: 2rem;
+}
+
+.eObi .eOmu .eAsagbo, h1 span{
+    color: var(--lightred);
+}
+
+.eCTA{
+    display: flex;
+    align-items: center;
+}
+
+.eCTAB{
+    border: 0;
+    padding: .5rem 1.3rem;
+    border-radius: .3rem;
+    background: var(--Book);
+    color: var(--blue);
+    font-size: .7vw;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 2vw;
+}
+
+.eCTAV{
+    border: none;
+    background: 0;
+    color: var(--Book);
+    display: flex;
+    align-items: center;
+}
+
+.eCTAV img{
+    max-width: 100%;
+    height: auto;
+    margin-left: .4rem;
+}
+
+.eOmu{
+    width: 33%;
+    max-height: fit-content;
+    background: url(Images//eOmu.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30Vh 3% 6vh 6vh;
+    margin-left: 6vw;
+    border-radius: .4rem;
+}
+
+.eAsagbo{
+    width: 33%;
+    max-height: fit-content;
+    background: url(Images/eAsagbo.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30Vh 3% 6vh 6vh;
+    margin-left: 6vw;
+    border-radius: .4rem;
+}
+
+
 
 
 
@@ -796,6 +940,157 @@ Body{
         background: var(--Book);
         font-weight: 600;
         font-size: 3vw;
+    }
+
+    .Events{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 6%;
+        overflow: auto;
+    }
+    
+    .eTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+    
+    .etLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .etLeft h1{
+        margin-right: 0rem;
+        font-weight: 400;
+        font-size: 2.5vw;
+        background: var(--gradient);
+        padding: .6rem 2rem;
+        border-radius: 5rem;
+        margin-top: 2vh;
+    }
+    
+    .etLeft h2{
+        font-weight: 300;
+        font-size: 1.8vw;
+        font-style: italic;
+        color: var(--mildwhite);
+        display: none;
+    }
+    
+    .eTop input{
+        background: var(--lightgray);
+        padding:  .2rem .8rem;
+        border: 0;
+        width: 35vw;
+        border-radius: .2rem;
+        color: var(--Book);
+    }
+    
+    .eTop  ::placeholder{
+        font-style: italic;
+        font-weight: 300;
+        font-size: 2vw;
+    }
+    
+    .Events h3{
+        margin-bottom: 3rem;
+        font-weight: 400;
+        font-size: 5vw;
+        text-align: center;
+    }
+    
+    .Events h3 span{
+        color: var(--lightred);
+    }
+    
+    .eListCon{
+        display: flex;
+        overflow: scroll;
+        align-items: top;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .eListCon::-webkit-scrollbar {
+        display: none;
+      }
+    
+    .eObi{
+        min-width: 75%;
+        max-height: fit-content;
+        background: url(Images/eObi.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 15Vh 3% 6vh 3vh;
+        border-radius: .4rem;
+    }
+    
+    .eObi .eOmu .eAsagbo, h1{
+        font-weight: 400;
+        font-size: 4.3vw;
+        margin-bottom: 1rem;
+    }
+    
+    .eObi .eOmu .eAsagbo, h1 span{
+        color: var(--lightred);
+    }
+    
+    .eCTA{
+        display: flex;
+        align-items: center;
+    }
+    
+    .eCTAB{
+        border: 0;
+        padding: .5rem .6rem;
+        border-radius: .3rem;
+        background: var(--Book);
+        color: var(--blue);
+        font-size: 2vw;
+        font-weight: 400;
+        cursor: pointer;
+        margin-right: 2vw;
+    }
+    
+    .eCTAV{
+        border: none;
+        background: 0;
+        color: var(--Book);
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 2vw;
+    }
+    
+    .eCTAV img{
+        max-width: 100%;
+        height: auto;
+        margin-left: .4rem;
+    }
+    
+    .eOmu{
+        min-width: 75%;
+        max-height: fit-content;
+        background: url(Images//eOmu.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 15Vh 3% 6vh 3vh;
+        margin-left: 5vw;
+        border-radius: .4rem;
+    }
+    
+    .eAsagbo{
+        min-width: 75%;
+        max-height: fit-content;
+        background: url(Images/eAsagbo.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 15Vh 3% 6vh 3vh;
+        margin-left: 5vw;
+        border-radius: .4rem;
     }
     
 }
