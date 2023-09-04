@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+@font-face {
+    font-family: "ModernAge";
+    src: url(Fonts/Modern\ Age.ttf);
+}
+@font-face {
+    font-family: "Quincy";
+    src: url(Fonts/QuincyItalic-Ea3Rz.ttf);
+}
+
+:root{
+    --lightred: #f83600;
+    --darkred: #890303;
+    --lightgray: #f6f6f6;
+    --blue: #000507;
+    --Book: #e7edf1;
+    --AD:#ffffff;
+    --lightblue:#283b4c;
+    --gradient: linear-gradient(90deg, var(--lightred), var(--darkred));
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    position: fixed;
+    width: 82%;
+    background: var(--blue);
+    z-index: 2;
+}
+
+.logo{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.logo span{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+
+header ul, li{
+    display: flex;
+    margin-right: 2rem;
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: space-around;
+}
+
+header ul a :hover{
+    color: var(--lightred);
+}
+
+header button{
+    border: 0;
+    padding: .5rem 2rem;
+    border-radius: .3rem;
+    background: var(--gradient);
+    color: var(--Book);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+Body{
+    background:var(--blue) ;
+    color: var(--Book);
+}
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 6% 0 9%;
+}
+
+.Hometxt{
+    width: 60%;
+    padding-right: 6%;
+    margin-top: 4%;
+}
+
+.Hometxt h1{
+    font-size: 3.6vw;
+    font-weight: 800;
+}
+
+.Hometxt h1 span{
+    color: var(--lightred);
+}
+
+.Hometxt p{
+    margin-top: 2rem;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.Hometxt button{
+    border: 0;
+    padding: .7rem 2rem;
+    border-radius: .2rem;
+    background: var(--gradient);
+    color: var(--Book);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.Homeimg{
+    width: 40%;
+    margin-top: 2%;
+}
+
+.Homeimg img{
+    max-width: 100%;
+    height: auto;
+}
+
+.History{
+    color: var(--blue);
+    background: var(--Book);
+    display: flex;
+}
+
+.hLeft{
+    width: 35%;
+    max-height: fit-content;
+    background: url(Images/historycard.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--Book);
+    padding: 6Vh 3% 6vh 6vh;
+}
+
+.hLeft h1{
+    font-size: 5vw;
+    font-weight: 900;
+}
+
+.hLeft p{
+    margin-top: 2rem;
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.hLeft p span{
+    font-weight: 900;
+}
+
+.aboutCard{
+    margin-right: 12vw;
+    margin-top: 5rem;
+}
+
+.aboutCard img{
+    max-width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.hRight{
+    width: 65%;
+}
+
+.hRight p{
+    padding: 0 8vw;
+    font-size: 1.5vw;
+    margin: 2rem 0;
+    text-align: justify;
+}
+
+.hRight button{
+    margin: 0 8vw;
+    border: 0;
+    padding: .9rem 0;
+    background: var(--gradient);
+    color: var(--Book);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 74%;
+}
+
+.Discover{
+    display: flex;
+    background: var(--Book);
+    color: var(--blue);
+    padding: 4rem 5%;
+    padding-top: 5rem;
+}
+
+.DiscoverLeft{
+    width: 50%;
+    margin-right: 9vw;
+    margin-top: 3rem;
+}
+
+.join{
+    margin: 1rem 0 3rem 0;
+    background: var(--AD);
+    padding: 2rem ;
+    border-radius: .7rem;
+}
+
+.join h1{
+    font-size: 3.4vw;
+    font-weight: 400;
+}
+
+.join h1 span{
+    color: var(--lightred);
+}
+
+.join p{
+    margin-top: 2rem;
+    font-size: 1vw;
+    font-style: italic;
+    padding-right: 4rem;
+}
+
+.Jcta{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.lane{
+    border: 0;
+    padding: .6rem 1.3rem;
+    border-radius: 3rem;
+    background: var(--gradient);
+    color: var(--Book);
+    font-size: .8vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.bplane{
+    border: 0;
+    padding: .6rem 1.3rem;
+    border-radius: 3rem;
+    background: var(--AD);
+    color: var(--blue);
+    font-size: .8vw;
+    font-weight: 400;
+    cursor: pointer;
+    font-style: italic;
+    margin-left: 2vw;
+}
+
+.prop{
+    margin: 2rem 0 5rem 0;
+    background: var(--AD);
+    padding: 2rem ;
+    border-radius: .7rem;
+}
+
+.prop h1{
+    font-weight: 400;
+    font-size: 1.8vw;
+}
+
+.prop h2{
+    font-weight: 900;
+    font-size: 1.9vw;
+    margin-bottom: 2rem;
+}
+
+.prop h2 span{
+    color: var(--lightred);
+}
+
+.prop p{
+    font-size: 1vw;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.prop button{
+    border: 0;
+    padding: .9rem 1.3rem;
+    border-radius: .3rem;
+    background: var(--gradient);
+    color: var(--Book);
+    font-size: 1.3vw;
+    font-weight: 400;
+    cursor: pointer;
+    width: 100%;
+}
+
+.grassroot{
+    padding: 0 2rem;
+}
+
+.grassroot h1{
+    font-weight: 400;
+    font-size: 4vw;
+    margin-bottom: 2rem;
+}
+
+.grassroot h1 span{
+    color: var(--lightred);
+}
+
+.grassroot p{
+    font-weight: 400;
+    font-size: 1.3vw;
+    text-align: justify;
+}
+
+
+.DiscoverRight{
+    width: 50%;
+}
+
+.youtube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.youtube img{
+    max-width: 30%;
+    height: auto;
+    margin-right: -2vw;
+    z-index: 1;
+    border-radius: .4rem;
+}
+
+.youtube video{
+    max-width: 60%;
+    height: auto;
+    background: var(--lightblue);
+    border-radius: .8rem;
+}
+
+.blogprev{
+    background: var(--blue);
+    color: var(--Book);
+    margin-top: 10rem;
+    padding: 2rem;
+    border-radius: .6rem;
+}
+
+.prevhead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 3rem 0;
+}
+
+.prevhead h1{
+    background: var(--gradient);
+    padding: .4rem 1.2rem;
+    border-radius: 3rem;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.prevhead img{
+    max-width: 10%;
+    height: auto;
+}
+
+.blogprev h2{
+    font-weight: 400;
+    font-size: 2vw;
+    margin-bottom: 2rem;
+}
+
+.blogprev h2 span{
+    color: var(--lightred);
+}
+
+.blogprev p{
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1vw;
+    margin-bottom: 2rem;
+}
+
+.blogprev button{
+    width: 100%;
+    padding: 1rem 0 ;
+    border: 0;
+    color: var(--blue);
+    background: var(--Book);
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 9%;
+        position: fixed;
+        width: 82%;
+        z-index: 2;
+    }
+    
+    .logo{
+        font-size: 13px;
+        font-weight: 300;
+    }
+    
+    .logo span{
+        font-size: 13px;
+        font-weight: 900;
+    }
+    
+    
+    header ul, li{
+        display: none;
+        margin-right: 2rem;
+        font-size: 15px;
+        font-weight: 400;
+        justify-content: space-around;
+    }
+    
+    header ul a :hover{
+        color: var(--lightred);
+    }
+    
+    header button{
+        border: 0;
+        padding: .5rem 1.5rem;
+        border-radius: .3rem;
+        background: var(--gradient);
+        color: var(--Book);
+        font-size: 10px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    
+    Body{
+        background:var(--blue) ;
+        color: var(--Book);
+    }
+    
+    .Home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0 6% 0 9%;
+        background: url(Images) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .Hometxt{
+        width: 100%;
+        padding-right: 6%;
+        margin-top: 0%;
+    }
+    
+    .Hometxt h1{
+        font-size: 6.6vw;
+        font-weight: 800;
+    }
+    
+    .Hometxt h1 span{
+        color: var(--lightred);
+    }
+    
+    .Hometxt p{
+        margin-top: 1rem;
+        font-size: 2.5vw;
+        font-weight: 400;
+        margin-right: 10%;
+    }
+    
+    .Hometxt button{
+        border: 0;
+        padding: .7rem 2rem;
+        border-radius: .2rem;
+        background: var(--gradient);
+        color: var(--Book);
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .Homeimg{
+        width: 100%;
+        margin-top: 4%;
+        display: none;
+    }
+    
+    .Homeimg img{
+        max-width: 100%;
+        height: auto;
+    }
+    .History{
+        color: var(--blue);
+        background: var(--Book);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hLeft{
+        width: 100%;
+        max-height: fit-content;
+        background: url(Images/historycard.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: var(--Book);
+        padding: 6Vh 0 6vh 0;
+    }
+    
+    .hLeft h1{
+        font-size: 12vw;
+        font-weight: 900;
+        margin-left: 6vh;
+    }
+    
+    .hLeft p{
+        margin-top: 1.5rem;
+        font-size: 4vw;
+        font-weight: 300;
+        margin-left: 6vh;
+    }
+    
+    .hLeft p span{
+        font-weight: 900;
+    }
+    
+    .aboutCard{
+        margin-right: 12vw;
+        margin-top: 4rem;
+        margin-left: 6vh;
+    }
+    
+    .aboutCard img{
+        max-width: 100%;
+        height: auto;
+        border-radius: .5rem;
+    }
+    
+    .hRight{
+        width: 100%;
+    }
+    
+    .hRight p{
+        padding: 0 12vw;
+        font-size: 3vw;
+        margin: 2rem 0;
+        text-align: justify;
+    }
+    
+    .hRight button{
+        margin: 0 12vw 2.5rem 12vw;
+        border: 0;
+        padding: .9rem 0;
+        background: var(--gradient);
+        color: var(--Book);
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        width: 75%;
+    }
+
+    .Discover{
+        display: flex;
+        flex-direction: column;
+        background: var(--Book);
+        color: var(--blue);
+        padding: 4rem 5%;
+        padding-top: 0rem;
+    }
+    
+    .DiscoverLeft{
+        width: 100%;
+        margin-right: 9vw;
+        margin-top: 0;
+    }
+    
+    .join{
+        margin: 1rem 0 3rem 0;
+        background: var(--AD);
+        padding: 2rem ;
+        border-radius: .7rem;
+    }
+    
+    .join h1{
+        font-size: 6.4vw;
+        font-weight: 400;
+    }
+    
+    .join h1 span{
+        color: var(--lightred);
+    }
+    
+    .join p{
+        margin-top: 1.5rem;
+        font-size: 3.5vw;
+        font-style: italic;
+        padding-right: 0rem;
+    }
+    
+    .Jcta{
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .lane{
+        border: 0;
+        padding: .6rem 1.3rem;
+        border-radius: 3rem;
+        background: var(--gradient);
+        color: var(--Book);
+        font-size: 2vw;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    .bplane{
+        border: 0;
+        padding: .6rem 1.3rem;
+        border-radius: 3rem;
+        background: var(--AD);
+        color: var(--blue);
+        font-size: 2vw;
+        font-weight: 400;
+        cursor: pointer;
+        font-style: italic;
+        margin-left: 2vw;
+    }
+    
+    .prop{
+        margin: 2rem 0 3rem 0;
+        background: var(--AD);
+        padding: 2rem ;
+        border-radius: .7rem;
+    }
+    
+    .prop h1{
+        font-weight: 400;
+        font-size: 3.8vw;
+    }
+    
+    .prop h2{
+        font-weight: 900;
+        font-size: 3.9vw;
+        margin-bottom: 2rem;
+    }
+    
+    .prop h2 span{
+        color: var(--lightred);
+    }
+    
+    .prop p{
+        font-size: 3vw;
+        font-weight: 400;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+    
+    .prop button{
+        border: 0;
+        padding: .9rem 1.3rem;
+        border-radius: .3rem;
+        background: var(--gradient);
+        color: var(--Book);
+        font-size: 3.3vw;
+        font-weight: 400;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .grassroot{
+        padding: 0 2rem;
+    }
+    
+    .grassroot h1{
+        font-weight: 400;
+        font-size: 7vw;
+        margin-bottom: 2rem;
+    }
+    
+    .grassroot h1 span{
+        color: var(--lightred);
+    }
+    
+    .grassroot p{
+        font-weight: 400;
+        font-size: 3vw;
+        text-align: justify;
+    }
+    
+    
+    .DiscoverRight{
+        width: 100%;
+        margin-top: 3rem;
+    }
+    
+    .youtube{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .youtube img{
+        max-width: 30%;
+        height: auto;
+        margin-right: -2vw;
+        z-index: 1;
+        border-radius: .4rem;
+    }
+    
+    .youtube video{
+        max-width: 60%;
+        height: auto;
+        background: var(--lightblue);
+        border-radius: .8rem;
+    }
+    
+    .blogprev{
+        background: var(--blue);
+        color: var(--Book);
+        margin-top: 3rem;
+        padding: 1.5rem;
+        border-radius: .6rem;
+    }
+    
+    .prevhead{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 1.4rem 0;
+    }
+    
+    .prevhead h1{
+        background: var(--gradient);
+        padding: .4rem 1.2rem;
+        border-radius: 3rem;
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    
+    .prevhead img{
+        max-width: 8%;
+        height: auto;
+    }
+    
+    .blogprev h2{
+        font-weight: 400;
+        font-size: 4vw;
+        margin-bottom: 1.5rem;
+    }
+    
+    .blogprev h2 span{
+        color: var(--lightred);
+    }
+    
+    .blogprev p{
+        text-align: justify;
+        font-weight: 400;
+        font-size: 2.3vw;
+        margin-bottom: 1.5rem;
+    }
+    
+    .blogprev button{
+        width: 100%;
+        padding: 1rem 0 ;
+        border: 0;
+        color: var(--blue);
+        background: var(--Book);
+        font-weight: 600;
+        font-size: 3vw;
+    }
+    
+}
