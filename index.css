@@ -7,9 +7,23 @@
     font-family: "Quincy";
     src: url(Fonts/QuincyItalic-Ea3Rz.ttf);
 }
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts//AvenirLRoman.otf);
+}
 
 :root{
     --lightred: #f83600;
+    --darkgreen: #038922;
+    --lightgreen: #00f840;
     --darkred: #890303;
     --lightgray: #070c0e;
     --mildwhite: #a0a9ae;
@@ -17,6 +31,7 @@
     --Book: #e7edf1;
     --AD:#ffffff;
     --lightblue:#283b4c;
+    --newGradient: linear-gradient(90deg, var(--lightgreen), var(--darkgreen));
     --gradient: linear-gradient(90deg, var(--lightred), var(--darkred));
 }
 
@@ -131,70 +146,141 @@ Body{
     height: auto;
 }
 
-.History{
-    color: var(--blue);
-    background: var(--Book);
+.AboutFOAP{
     display: flex;
-}
-
-.hLeft{
-    width: 35%;
-    max-height: fit-content;
-    background: url(Images/historycard.png) no-repeat;
+    flex-direction: column;
+    background: url(Images/aboutbg.png) no-repeat;
     background-position: center;
     background-size: cover;
-    color: var(--Book);
-    padding: 6Vh 3% 6vh 6vh;
+    padding: 5% 9%;
 }
 
-.hLeft h1{
-    font-size: 5vw;
-    font-weight: 900;
+.AboutTop{
+    display: flex;
+    flex-direction: column;
 }
 
-.hLeft p{
-    margin-top: 2rem;
-    font-size: 1vw;
+.AboutTop h6{
     font-weight: 300;
+    font-size: .7vw;
+    color: var(--lightgreen);
+    margin-top: 2rem;
+    font-family: Avenirbook;
 }
 
-.hLeft p span{
-    font-weight: 900;
+.AboutTop h1{
+    margin-top: .5rem;
+    font-size: 2.5vw;
+    font-weight: 700;
+    font-family: AvenirBlack;
 }
 
-.aboutCard{
-    margin-right: 12vw;
-    margin-top: 5rem;
+.AboutTop p{
+    margin-top: -1rem;
+    font-weight: 400;
+    font-size: 1vw;
+    font-family: Avenirbook;
 }
 
-.aboutCard img{
-    max-width: 100%;
+.AboutCTA{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.CTALM{
+    font-size: .8vw;
+    font-weight: 600;
+    padding: .7rem 2.5rem;
+    border: 0;
+    border-radius: 5rem;
+    background: var(--newGradient);
+    color: var(--Book);
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.CTAWV{
+    font-size: .8vw;
+    font-weight: 600;
+    padding: .7rem 2rem;
+    border: 0;
+    border-radius: 5rem;
+    background: var(--lightblue);
+    color: var(--Book);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.CTAWV img{
+    max-width: 1vw;
     height: auto;
-    border-radius: .5rem;
+    margin-right: .4rem;
 }
 
-.hRight{
-    width: 65%;
+.AboutButtom{
+    display: flex;
+    align-items: end;
 }
 
-.hRight p{
-    padding: 0 8vw;
-    font-size: 1.5vw;
-    margin: 2rem 0;
+.ABLeft{
+    width: 60%;
+    padding-right: 9rem;
+}
+
+.ABLeft h2{
+    font-weight: 700;
+    font-size: 2vw;
+    margin-top: 1rem;
+}
+
+.ABLeft p{
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: Avenirbook;
+    margin-top: 2rem;
     text-align: justify;
 }
 
-.hRight button{
-    margin: 0 8vw;
-    border: 0;
-    padding: .9rem 0;
-    background: var(--gradient);
-    color: var(--Book);
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    width: 74%;
+.ABRight{
+    width: 40%;
 }
+
+.Afloat{
+    background: var(--lightgray);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .3rem;
+}
+
+.Afloat h2{
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.Afloat p{
+    margin: 2rem 0;
+    font-size: .9vw;
+    font-size: 400;
+    font-family: Avenirbook;
+}
+
+.Afloat button{
+    font-size: .8vw;
+    font-weight: 600;
+    padding: .7rem 2.5rem;
+    border: 0;
+    border-radius: 5rem;
+    background: var(--newGradient);
+    color: var(--blue);
+    cursor: pointer;
+}
+
+
+
 
 .Discover{
     display: flex;
@@ -688,6 +774,50 @@ Body{
 }
 
 
+.Gallery{
+    padding: 12vw 9%;
+    background: url(Images/Gallerybg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Gallery h1{
+    font-size: 3vw;
+    font-weight: 900;
+    font-family: AvenirBlack;
+    font-style: italic;
+    line-height: 6vh;
+
+}
+
+.Gallery h1 span{
+    font-size: 2.2vw;
+    font-weight: 400;
+    font-family: AvenirBook;
+
+}
+
+.Gallery p{
+    font-size: 1.1vw;
+    font-weight: 400;
+    font-family: AvenirBook;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.Gallery button{
+    font-size: .8vw;
+    font-weight: 600;
+    padding: .7rem 2.5rem;
+    border: 0;
+    border-radius: 5rem;
+    background: var(--gradient);
+    color: var(--Book);
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -806,73 +936,142 @@ Body{
         max-width: 100%;
         height: auto;
     }
-    .History{
-        color: var(--blue);
-        background: var(--Book);
+    
+
+    .AboutFOAP{
         display: flex;
         flex-direction: column;
-    }
-    
-    .hLeft{
-        width: 100%;
-        max-height: fit-content;
-        background: url(Images/historycard.png) no-repeat;
+        background: url(Images/aboutbg.png) no-repeat;
         background-position: center;
         background-size: cover;
-        color: var(--Book);
-        padding: 6Vh 0 6vh 0;
+        padding: 5% 9%;
     }
     
-    .hLeft h1{
-        font-size: 12vw;
-        font-weight: 900;
-        margin-left: 6vh;
+    .AboutTop{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
     }
     
-    .hLeft p{
-        margin-top: 1.5rem;
-        font-size: 4vw;
+    .AboutTop h6{
         font-weight: 300;
-        margin-left: 6vh;
+        font-size: 1.7vw;
+        color: var(--lightgreen);
+        margin-top: .4rem;
+        font-family: Avenirbook;
     }
     
-    .hLeft p span{
-        font-weight: 900;
+    .AboutTop h1{
+        margin-top: .5rem;
+        font-size: 4.5vw;
+        font-weight: 700;
+        font-family: AvenirBlack;
     }
     
-    .aboutCard{
-        margin-right: 12vw;
-        margin-top: 4rem;
-        margin-left: 6vh;
+    .AboutTop p{
+        margin-top: -.5rem;
+        font-weight: 400;
+        font-size: 2vw;
+        font-family: Avenirbook;
     }
     
-    .aboutCard img{
-        max-width: 100%;
+    .AboutCTA{
+        margin: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .CTALM{
+        font-size: 1.8vw;
+        font-weight: 600;
+        padding: .7rem 2rem;
+        border: 0;
+        border-radius: 5rem;
+        background: var(--newGradient);
+        color: var(--Book);
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+    
+    .CTAWV{
+        font-size: 1.8vw;
+        font-weight: 600;
+        padding: .7rem 1.5rem;
+        border: 0;
+        border-radius: 5rem;
+        background: var(--lightblue);
+        color: var(--Book);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .CTAWV img{
+        max-width: 3vw;
         height: auto;
-        border-radius: .5rem;
+        margin-right: .4rem;
     }
     
-    .hRight{
+    .AboutButtom{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    
+    .ABLeft{
         width: 100%;
+        padding-right: 0rem;
     }
     
-    .hRight p{
-        padding: 0 12vw;
-        font-size: 3vw;
+    .ABLeft h2{
+        font-weight: 700;
+        font-size: 2vw;
+        margin-top: .4rem;
+    }
+    
+    .ABLeft p{
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: Avenirbook;
         margin: 2rem 0;
         text-align: justify;
     }
     
-    .hRight button{
-        margin: 0 12vw 2.5rem 12vw;
-        border: 0;
-        padding: .9rem 0;
-        background: var(--gradient);
-        color: var(--Book);
-        font-size: 15px;
+    .ABRight{
+        width: 100%;
+    }
+    
+    .Afloat{
+        background: var(--lightgray);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: .3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .Afloat h2{
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+    
+    .Afloat p{
+        margin: 1rem 0;
+        font-size: 2.2vw;
+        font-size: 400;
+        font-family: Avenirbook;
+    }
+    
+    .Afloat button{
+        font-size: 2.4vw;
         font-weight: 600;
+        padding: .7rem 2.5rem;
+        border: 0;
+        border-radius: 5rem;
+        background: var(--newGradient);
+        color: var(--blue);
         cursor: pointer;
-        width: 75%;
     }
 
     .Discover{
@@ -1376,6 +1575,49 @@ Body{
         max-width: 14%;
         height: auto;
         margin-right: 1rem;
+    }
+
+    .Gallery{
+        padding: 18vw 9%;
+        background: url(Images/Gallerybg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .Gallery h1{
+        font-size: 4vw;
+        font-weight: 900;
+        font-family: AvenirBlack;
+        font-style: italic;
+        line-height: 2.5vh;
+    
+    }
+    
+    .Gallery h1 span{
+        font-size: 3.2vw;
+        font-weight: 400;
+        font-family: AvenirBook;
+    
+    }
+    
+    .Gallery p{
+        font-size: 1.8vw;
+        font-weight: 400;
+        font-family: AvenirBook;
+        font-style: italic;
+        margin-bottom: 1rem;
+    }
+    
+    .Gallery button{
+        font-size: 1.8vw;
+        font-weight: 600;
+        padding: .7rem 2.5rem;
+        border: 0;
+        border-radius: 5rem;
+        background: var(--gradient);
+        color: var(--Book);
+        margin-right: 4rem;
+        cursor: pointer;
     }
     
 }
