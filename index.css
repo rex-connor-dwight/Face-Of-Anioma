@@ -818,6 +818,67 @@ Body{
 }
 
 
+.Newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 0;
+    background: var(--lightgray);
+    padding: 4rem 9%;
+}
+
+.NLright{
+    width: 50%;
+}
+
+.NLright h2{
+    font-size: 3vw;
+    font-weight: 600;
+    font-family: AvenirBook;
+}
+
+.NLright p{
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: AvenirBook;
+    margin-top: .8rem;
+}
+
+.NLright p span{
+    color: var(--lightgreen);
+}
+
+.NLLeft{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NLLeft input{
+    background: var(--blue);
+    padding: 1.4vw 3vw;
+    border-radius: 5rem;
+    border: 0;
+    font-size: 1vw;
+    font-weight: 400;
+    color: var(--AD);
+    margin-left: 2rem;
+}
+
+.NLLeft button{
+    border: 0;
+    background: var(--newGradient);
+    padding: 1.1vw 3vw;
+    border-radius: 5rem;
+}
+
+.NLLeft img{
+    max-width: 1.5vw;
+    height: auto;
+}
+
+
 
 
 
@@ -1618,6 +1679,70 @@ Body{
         color: var(--Book);
         margin-right: 4rem;
         cursor: pointer;
+    }
+
+    .Newsletter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0 1rem 0;
+        background: var(--lightgray);
+        padding: 3rem 9%;
+    }
+    
+    .NLright{
+        width: 100%;
+    }
+    
+    .NLright h2{
+        font-size: 4.6vw;
+        font-weight: 600;
+        font-family: AvenirBook;
+    }
+    
+    .NLright p{
+        font-size: 2vw;
+        font-weight: 400;
+        font-family: AvenirBook;
+        margin-top: .5rem;
+    }
+    
+    .NLright p span{
+        color: var(--lightgreen);
+    }
+    
+    .NLLeft{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-top: 2rem;
+    }
+    
+    .NLLeft input{
+        background: var(--blue);
+        padding: 2.4vw 4vw;
+        border-radius: 5rem;
+        border: 0;
+        width: 80%;
+        font-size: 2.3vw;
+        font-weight: 400;
+        color: var(--AD);
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+    
+    .NLLeft button{
+        border: 0;
+        background: var(--newGradient);
+        padding: 1.1vw 5vw;
+        border-radius: 5rem;
+    }
+    
+    .NLLeft img{
+        max-width: 2.5vw;
+        height: auto;
     }
     
 }
