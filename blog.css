@@ -470,7 +470,7 @@ header a span{
     .featuredBlog{
         display: flex;
         flex-direction: column;
-        padding: 0 7%;
+        padding: 0;
     }
 
     .featuredBlog h2{
@@ -479,6 +479,7 @@ header a span{
         margin-bottom: .7rem;
         font-family: "AvenirBlack";
         color: var(--lightblue);
+        padding: 0 7%;
     }
 
     .fbCon{
@@ -487,6 +488,7 @@ header a span{
         justify-content: space-between;
         margin-bottom: 3rem;
         overflow: scroll;
+        padding: 0 7%;
     }
 
     .fbCon::-webkit-scrollbar{
