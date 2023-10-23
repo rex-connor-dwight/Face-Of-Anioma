@@ -502,7 +502,7 @@ header a span{
     }
 
     .fbItems{
-        width: 200px;
+        width: 230px;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -512,7 +512,7 @@ header a span{
     }
 
     .fbItems h1{
-        font-size: 3.1vw;
+        font-size: 3.3vw;
         font-weight: 700;
         font-family: "AvenirBook";
         margin-bottom: .8rem;
@@ -526,7 +526,7 @@ header a span{
     }
 
     .fbItems p{
-        font-size: 1.9vw;
+        font-size: 2.1vw;
         font-weight: 400;
         font-family: "AvenirBook";
         margin-bottom: 1rem;
