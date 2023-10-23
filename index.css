@@ -243,7 +243,7 @@ Body{
     font-weight: 400;
     font-family: Avenirbook;
     margin-top: 2rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .ABRight{
@@ -376,7 +376,7 @@ Body{
 .prop p{
     font-size: 1vw;
     font-weight: 400;
-    text-align: justify;
+    text-align: left;
     margin-bottom: 2rem;
 }
 
@@ -409,7 +409,7 @@ Body{
 .grassroot p{
     font-weight: 400;
     font-size: 1.3vw;
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -477,7 +477,7 @@ Body{
 }
 
 .blogprev p{
-    text-align: justify;
+    text-align: left;
     font-weight: 400;
     font-size: 1vw;
     margin-bottom: 2rem;
@@ -727,14 +727,14 @@ Body{
 }
 
 .Obireviews p{
-    text-align: justify;
+    text-align: left;
     font-weight: 300;
     font-size: .9vw;
     margin-bottom: 2rem;
 }
 
 .Amandareviews p{
-    text-align: justify;
+    text-align: left;
     font-weight: 300;
     font-size: .9vw;
     margin-bottom: 2rem;
@@ -949,7 +949,7 @@ Body{
         align-items: center;
         justify-content: center;
         height: 100vh;
-        margin: 0 6% 0 9%;
+        margin: 0 6% 0 3%;
         background: url(Images) no-repeat;
         background-position: center;
         background-size: cover;
