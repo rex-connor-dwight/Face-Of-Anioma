@@ -881,6 +881,54 @@ Body{
 }
 
 
+.Banor{
+    background-color: var(--blue);
+    display: flex;
+}
+
+.Bannor-con{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+    background: var(--lightgray);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.banl{
+    width: 40%;
+    background: url(Images/banor1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    border-radius: .2rem;
+    margin-right: 3vw;
+}
+
+.banr{
+    width: 60%;
+}
+
+.banr h1{
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin-top: 3vh;
+}
+
+.banr h1 span{
+    color: var(--lightred);
+}
+
+.banr p{
+    font-size: 1.4vw;
+    font-weight: 500;
+    font-family: AvenirBook;
+    margin-right: 1.5rem;
+}
+
+
+
+
 
 
 
@@ -1745,6 +1793,54 @@ Body{
     .NLLeft img{
         max-width: 2.5vw;
         height: auto;
+    }
+
+
+    .Banor{
+        background-color: var(--blue);
+        display: flex;
+    }
+    
+    .Bannor-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;
+        background: var(--lightgray);
+        padding: .8rem;
+        border-radius: .5rem;
+    }
+    
+    .banl{
+        width: 100%;
+        background: url(Images/banor1.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 35vh;
+        border-radius: .2rem;
+        margin-right: 0vw;
+    }
+    
+    .banr{
+        width: 100%;
+        margin-top: 1vh;
+    }
+    
+    .banr h1{
+        font-size: 6.5vw;
+        font-weight: 500;
+        margin-top: 3vh;
+    }
+    
+    .banr h1 span{
+        color: var(--lightred);
+    }
+    
+    .banr p{
+        font-size: 2.5vw;
+        font-weight: 500;
+        font-family: AvenirBook;
+        margin-right: 1.5rem;
     }
     
 }
