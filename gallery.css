@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+@font-face {
+    font-family: "ModernAge";
+    src: url(Fonts/Modern\ Age.ttf);
+}
+@font-face {
+    font-family: "Quincy";
+    src: url(Fonts/QuincyItalic-Ea3Rz.ttf);
+}
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts//AvenirLRoman.otf);
+}
+
+:root{
+    --lightred: #f83600;
+    --darkgreen: #038922;
+    --lightgreen: #00f840;
+    --darkred: #890303;
+    --lightgray: #070c0e;
+    --mildwhite: #a0a9ae;
+    --blue: #000507;
+    --Book: #e7edf1;
+    --AD:#ffffff;
+    --lightblue:#283b4c;
+    --newGradient: linear-gradient(90deg, var(--lightgreen), var(--darkgreen));
+    --gradient: linear-gradient(90deg, var(--lightred), var(--darkred));
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--blue );
+    text-decoration: none;
+}
+
+header{
+    padding: 1.5rem 5% 0 5%;
+    z-index: -1;
+}
+
+header a{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+header a span{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    padding: 0 .5% 0 5%;
+}
+
+.geeleft{
+    width: 50%;
+    margin-right: 2vw;
+}
+
+.geeleft h1{
+    font-size: 7vw;
+    font-weight: 800;
+    color: var(--lightred);
+    font-family: "AvenirBlack";
+    line-height: 12vh;
+}
+
+.geeleft h2{
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: "AvenirBook";
+}
+
+.geeleft p{
+    margin-top: 5vh;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: "AvenirBook";
+}
+
+.geeleft img{
+    max-width: 10%;
+    height: auto;
+    margin-top: 5vh;
+}
+
+.geeleft h3{
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-family: "AvenirBook";
+    position: absolute;
+    bottom: 5%;
+}
+
+.geeleft h3 span{
+    font-size: 1.2vw;
+    font-weight: 9000;
+    font-family: "AvenirBlack";
+    color: var(--lightred);
+}
+
+.geeright{
+    width: 50%;
+    overflow: scroll;
+    z-index: 2;
+    height: 100vh;
+    padding: 1vh 0;
+    transition: all 1s ease;
+}
+
+.geeright::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    transition: all 1s ease;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 10%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 8px;
+  }
+
+
+
+  @media only screen and (max-width: 600px){
+    header{
+        padding: 1.5rem 5% 0 5%;
+        z-index: -1;
+    }
+    
+    header a{
+        font-size: 13px;
+        font-weight: 300;
+    }
+    
+    header a span{
+        font-size: 13px;
+        font-weight: 900;
+    }
+    
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        padding: 0 5%;
+    }
+    
+    .geeleft{
+        width: 100%;
+        margin-right: 0;
+        margin-top: 3rem;
+    }
+    
+    .geeleft h1{
+        font-size: 11vw;
+        font-weight: 800;
+        color: var(--lightred);
+        font-family: "AvenirBlack";
+        line-height: 6vh;
+    }
+    
+    .geeleft h2{
+        font-size: 3vw;
+        font-weight: 500;
+        font-family: "AvenirBook";
+    }
+    
+    .geeleft p{
+        margin-top: 2vh;
+        font-size: 2.2vw;
+        font-weight: 500;
+        font-family: "AvenirBook";
+    }
+    
+    .geeleft img{
+        max-width: 10%;
+        height: auto;
+        margin: 3vh 0 4vh 0;
+    }
+    
+    .geeleft h3{
+        font-size: 3vw;
+        font-weight: 500;
+        font-family: "AvenirBook";
+        bottom: 63vh;
+    }
+    
+    .geeleft h3 span{
+        font-size: 3vw;
+        font-weight: 9000;
+        font-family: "AvenirBlack";
+        color: var(--lightred);
+    }
+    
+    .geeright{
+        width: 100%;
+        overflow: scroll;
+        z-index: 2;
+        height: 100vh;
+        padding: 1vh 0;
+        transition: all 1s ease;
+        margin-top: 1rem;
+    }
+    
+    .geeright::-webkit-scrollbar{
+        display: none;
+    }
+    
+    
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0px;
+        transition: all 1s ease;
+      }
+      
+      /* Create two equal columns that sits next to each other */
+      .column {
+        flex: 10%;
+        padding: 0 2px;
+      }
+      
+      .column img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 2px;
+      }
+  }
